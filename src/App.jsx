@@ -7,18 +7,7 @@ function App() {
 
   return (
     <>
-
-      
-      <nav>
-        <ul className="nav-bar">
-          <li>
-            <Link to="/movies">Movies</Link>
-          </li>
-        </ul>
-      </nav>
-      <Routes>
-        <Route path="/movies" element={<Movies />} />
-      </Routes>
+      <Movies />
     </>
 
 

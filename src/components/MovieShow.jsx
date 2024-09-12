@@ -11,6 +11,9 @@ function MovieShow({item, filterChecks}) {
     const [imdbRating, setImdbRating] = useState("");
     const [ratingDifference, setRatingDifference] = useState("");
 
+    console.log('Api Key:', apiKey);
+    console.log('Api URL:', apiUrl);
+
     useEffect(() =>{
       const fetchPoster = async (film) =>{
         try{

@@ -151,7 +151,6 @@ function Movies() {
       });
     };
       
-      console.log(sortedFilms);
 
   return (
     <div className="movies-position">

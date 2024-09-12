@@ -16,7 +16,6 @@ function Filters({ onFilter }) {
       setAverageButtonActive(!averageButtonActive);
     }
     onFilter(filterType);
-    setIsClicked(!isClicked);
   };
 
   return (

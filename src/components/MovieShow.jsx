@@ -2,6 +2,8 @@ import React from 'react'
 import {useState, useEffect} from "react"
 
 function MovieShow({item, filterChecks}) {
+    const apiKey = import.meta.env.VITE_API_KEY;
+    const apiUrl = import.meta.env.VITE_API_URL;
     const {episode, film, year, billRating, stacieRating, averageRating} = item;
     const [moviePoster, setMoviePoster] = useState("");
     const [moviePlot, setMoviePlot] = useState("");
@@ -12,7 +14,7 @@ function MovieShow({item, filterChecks}) {
     useEffect(() =>{
       const fetchPoster = async (film) =>{
         try{
-          const response = await fetch(`http://www.omdbapi.com/?&apikey=f62d8d9f&t=${film}`);
+          const response = await fetch(`${apiUrl}/?&apikey=${apiKey}&t=${film}`);
           if(!response.ok){
             throw new Error('Failed to fetch data');
           }
@@ -35,7 +37,6 @@ function MovieShow({item, filterChecks}) {
       setShowRatings(true);
     }
 
-    console.log(filterChecks);
 
   return (
     <div className="ind-movie">

@@ -158,7 +158,9 @@ function Movies() {
         <Sort onSort={handleSort} />
         <Filters onFilter={handleFilter} />
       </div>
-      <MovieList episodes={isSorted ? sortedFilms : episodes} filterChecks={filterChecks} />
+      <div className="movies-displayed">
+        <MovieList episodes={isSorted ? sortedFilms : episodes} filterChecks={filterChecks} />
+      </div>
     </div>
   )
 }

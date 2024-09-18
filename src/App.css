@@ -75,15 +75,8 @@ li{
   flex-direction:column;
   align-items: center;
   gap:2em;
-  position: fixed;
-  top: 0;
-  width: 83%;
-  background-color: #f8f9fa;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 100;
-  text-align:center;
-  box-sizing:border-box;
+
+  
 }
 
 .active-button{
@@ -95,9 +88,4 @@ li{
   gap:auto;
 }
 
-.movies-displayed{
-  margin-top: 80px; /* Adjust this based on the height of your fixed header */
-  height: calc(100vh - 80px); /* Fill remaining viewport height */
-  overflow-y: auto;
-  background-color: #e9ecef;
-}
+
